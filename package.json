@@ -1,0 +1,9 @@
+{
+  "name": "hermes-swe",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint"
+  }
+}

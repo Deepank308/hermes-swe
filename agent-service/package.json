@@ -1,0 +1,22 @@
+{
+  "name": "agent-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx --env-file=.env.development.local src/index.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "cyrus-claude-runner": "^0.2.21",
+    "cyrus-core": "^0.2.21",
+    "@linear/sdk": "^73.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "tsx": "^4.19.0",
+    "@types/node": "^22.0.0"
+  }
+}

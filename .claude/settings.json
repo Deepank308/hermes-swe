@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "env": {
+    "ENABLE_TOOL_SEARCH": "true"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "linear@claude-plugins-official": true,
+    "Notion@claude-plugins-official": true
+  },
+  "companyAnnouncements": [
+    "Welcome to Hermes! Boost your productivity with claude."
+  ],
+  "permissions": {
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*_secrets.json)",
+      "Read(**/local_private.py)",
+      "Edit(.env)",
+      "Edit(.env.*)",
+      "Edit(**/.env)",
+      "Edit(**/.env.*)",
+      "Edit(**/*_secrets.json)",
+      "Edit(**/yarn.lock)",
+      "Edit(**/poetry.lock)",
+      "Edit(**/package-lock.json)",
+      "Edit(**/local_private.py)"
+    ],
+    "allow": [
+      "Bash(docker compose:*)",
+      "Bash(docker logs:*)",
+      "Bash(npx prettier:*)",
+      "Bash(gh pr:*)",
+      "Bash(gh issue:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git switch:*)",
+      "Bash(git commit:*)",
+      "Bash(git fetch:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git show:*)",
+      "Bash(git stash:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(gh api:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(tree:*)",
+      "Skill(code-review)",
+      "WebSearch"
+    ]
+  },
+  "hooks": {},
+  "sandbox": {
+    "permissions": "auto-allow",
+    "excludedCommands": ["docker", "docker-compose"]
+  }
+}

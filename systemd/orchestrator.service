@@ -1,0 +1,15 @@
+[Unit]
+Description=AI Agent Orchestrator
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/agent/hermes-swe/orchestrator
+ExecStart=/usr/bin/node dist/index.js
+EnvironmentFile=/opt/agent/env
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

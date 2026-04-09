@@ -1,0 +1,19 @@
+{
+  "your-org/your-app": {
+    "amiName": "app",
+    "scriptsDir": "ami/app",
+    "workspaceDir": "/workspace/app",
+    "bakeAmi": true,
+    "secrets": ["SENTRY_ACCESS_TOKEN"],
+    "envExample": ".claude/.env.example",
+    "instanceType": "m6i.xlarge"
+  },
+  "your-org/hermes-swe": {
+    "amiName": "default",
+    "scriptsDir": "ami/hermes-swe",
+    "workspaceDir": "/workspace/hermes-swe",
+    "bakeAmi": false,
+    "secrets": [],
+    "instanceType": "m6i.large"
+  }
+}

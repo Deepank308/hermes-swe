@@ -1,0 +1,15 @@
+[Unit]
+Description=AI Agent Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/agent/hermes-swe/agent-service
+EnvironmentFile=/opt/agent/env
+ExecStart=/usr/bin/node dist/index.js
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

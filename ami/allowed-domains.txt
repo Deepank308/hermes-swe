@@ -1,0 +1,263 @@
+# Allowed outbound domains for AI agent EC2 instances
+# One domain per line. Lines starting with # are comments.
+# Used by firewall.sh to build the ipset allowlist.
+
+# --- Anthropic / Claude ---
+api.anthropic.com
+statsig.anthropic.com
+platform.claude.com
+code.claude.com
+claude.ai
+
+# --- GitHub ---
+github.com
+www.github.com
+api.github.com
+npm.pkg.github.com
+raw.githubusercontent.com
+pkg-npm.githubusercontent.com
+objects.githubusercontent.com
+codeload.github.com
+avatars.githubusercontent.com
+camo.githubusercontent.com
+gist.github.com
+
+# --- GitLab ---
+gitlab.com
+www.gitlab.com
+registry.gitlab.com
+
+# --- Bitbucket ---
+bitbucket.org
+www.bitbucket.org
+api.bitbucket.org
+
+# --- Docker ---
+registry-1.docker.io
+auth.docker.io
+index.docker.io
+hub.docker.com
+www.docker.com
+production.cloudflare.docker.com
+r2.cloudflarestorage.com
+download.docker.com
+gcr.io
+ghcr.io
+mcr.microsoft.com
+data.mcr.microsoft.com
+public.ecr.aws
+
+# --- Google Cloud ---
+cloud.google.com
+accounts.google.com
+gcloud.google.com
+googleapis.com
+storage.googleapis.com
+compute.googleapis.com
+container.googleapis.com
+
+# --- Azure / Microsoft ---
+azure.com
+portal.azure.com
+microsoft.com
+www.microsoft.com
+microsoftonline.com
+packages.microsoft.com
+dotnet.microsoft.com
+dot.net
+visualstudio.com
+dev.azure.com
+
+# --- AWS ---
+amazonaws.com
+api.aws
+
+# --- Oracle / Java ---
+oracle.com
+www.oracle.com
+java.com
+www.java.com
+java.net
+www.java.net
+download.oracle.com
+yum.oracle.com
+
+# --- npm / Yarn ---
+registry.npmjs.org
+www.npmjs.com
+www.npmjs.org
+npmjs.com
+npmjs.org
+yarnpkg.com
+registry.yarnpkg.com
+
+# --- Python ---
+pypi.org
+www.pypi.org
+files.pythonhosted.org
+pythonhosted.org
+test.pypi.org
+pypi.python.org
+pypa.io
+www.pypa.io
+
+# --- Ruby ---
+rubygems.org
+www.rubygems.org
+api.rubygems.org
+index.rubygems.org
+ruby-lang.org
+www.ruby-lang.org
+rubyforge.org
+www.rubyforge.org
+rubyonrails.org
+www.rubyonrails.org
+rvm.io
+get.rvm.io
+
+# --- Rust ---
+crates.io
+www.crates.io
+index.crates.io
+static.crates.io
+rustup.rs
+static.rust-lang.org
+www.rust-lang.org
+
+# --- Go ---
+proxy.golang.org
+sum.golang.org
+index.golang.org
+golang.org
+www.golang.org
+goproxy.io
+pkg.go.dev
+
+# --- Java / Kotlin / Gradle ---
+maven.org
+repo.maven.org
+central.maven.org
+repo1.maven.org
+jcenter.bintray.com
+gradle.org
+www.gradle.org
+services.gradle.org
+plugins.gradle.org
+kotlin.org
+www.kotlin.org
+spring.io
+repo.spring.io
+
+# --- PHP ---
+packagist.org
+www.packagist.org
+repo.packagist.org
+
+# --- .NET ---
+nuget.org
+www.nuget.org
+api.nuget.org
+
+# --- Dart ---
+pub.dev
+api.pub.dev
+
+# --- Elixir ---
+hex.pm
+www.hex.pm
+
+# --- Perl ---
+cpan.org
+www.cpan.org
+metacpan.org
+www.metacpan.org
+api.metacpan.org
+
+# --- Swift / CocoaPods ---
+cocoapods.org
+www.cocoapods.org
+cdn.cocoapods.org
+swift.org
+www.swift.org
+
+# --- Haskell ---
+haskell.org
+www.haskell.org
+hackage.haskell.org
+
+# --- Ubuntu / APT ---
+archive.ubuntu.com
+security.ubuntu.com
+ubuntu.com
+www.ubuntu.com
+ppa.launchpad.net
+launchpad.net
+www.launchpad.net
+
+# --- Kubernetes ---
+dl.k8s.io
+pkgs.k8s.io
+k8s.io
+www.k8s.io
+
+# --- HashiCorp ---
+releases.hashicorp.com
+apt.releases.hashicorp.com
+rpm.releases.hashicorp.com
+archive.releases.hashicorp.com
+hashicorp.com
+www.hashicorp.com
+
+# --- Anaconda ---
+repo.anaconda.com
+conda.anaconda.org
+anaconda.org
+www.anaconda.com
+continuum.io
+
+# --- Apache ---
+apache.org
+www.apache.org
+archive.apache.org
+downloads.apache.org
+
+# --- Eclipse ---
+eclipse.org
+www.eclipse.org
+download.eclipse.org
+
+# --- Node.js ---
+nodejs.org
+www.nodejs.org
+
+# --- Observability ---
+statsig.com
+www.statsig.com
+api.statsig.com
+sentry.io
+http-intake.logs.datadoghq.com
+datadoghq.com
+datadoghq.eu
+
+# --- Misc ---
+sourceforge.net
+packagecloud.io
+json-schema.org
+www.json-schema.org
+json.schemastore.org
+www.schemastore.org
+modelcontextprotocol.io
+
+# --- Custom: Infrastructure ---
+api.linear.app
+uploads.linear.app
+mcp.sentry.dev
+
+# --- Cloudflare Tunnel (preview URL) ---
+api.trycloudflare.com
+update.argotunnel.com
+pqtunnel.com
+region1.v2.argotunnel.com
+region2.v2.argotunnel.com
+h2.cftunnel.com
+cftunnel.com

@@ -1,0 +1,10 @@
+{
+  "Deepank308/hermes-swe": {
+    "amiName": "default",
+    "scriptsDir": "ami/hermes-swe",
+    "workspaceDir": "/workspace/hermes-swe",
+    "bakeAmi": false,
+    "secrets": [],
+    "instanceType": "m6i.large"
+  }
+}

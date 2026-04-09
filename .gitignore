@@ -1,0 +1,39 @@
+node_modules/
+dist/
+.turbo/
+*.tsbuildinfo
+
+# Environment
+.env*.local
+
+# OS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/settings.json
+
+# pnpm
+pnpm-debug.log
+
+# npm (project uses pnpm)
+package-lock.json
+
+# Claude Code local files
+.claude/settings.local.json
+CLAUDE.local.md
+
+# .cyrus
+.cyrus/
+*.log
+.logs/
+
+# Local session state
+sessions-local.json
+.linear-token.json
+
+# Plans (internal)
+docs/plans/
+
+# Worktrees
+worktrees/
