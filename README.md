@@ -216,6 +216,12 @@ Set `DRY_RUN=true` in `orchestrator/.env` to run locally without AWS resources.
 | [Cloudflare Setup](docs/cloudflare.md)         | Orchestrator tunnel + preview tunnels         |
 | [Slack Notifications](docs/slack.md)           | Bot setup for threaded notifications          |
 
+## Disclaimer
+
+Hermes uses Claude Code CLI to run autonomous coding sessions. Per [Anthropic's Agent SDK guidelines](https://code.claude.com/docs/en/agent-sdk/overview), third-party products should authenticate with an **Anthropic API key** — configure `ANTHROPIC_API_KEY` in your `.env.local`.
+
+Hermes is an independent open-source project, not affiliated with or endorsed by Anthropic. Please review Anthropic's [usage policy](https://www.anthropic.com/legal/aup) and [commercial terms](https://www.anthropic.com/legal/commercial-terms) to ensure your usage is compliant.
+
 ## License
 
 MIT
